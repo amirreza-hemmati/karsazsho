@@ -151,9 +151,6 @@ aside .nav-link:hover {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-	.products-grid > *{
-		flex-basis: 50%;
-	}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -164,6 +161,10 @@ aside .nav-link:hover {
 	
 	aside {
 		border-left: 1px solid #e8e8e8;
+	}
+	
+		.products-grid > *{
+		flex-basis: 50%;
 	}
 }
 
