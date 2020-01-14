@@ -1,0 +1,181 @@
+*{
+	direction: rtl !important;
+}
+
+.row{
+  margin: 0 !important;
+}
+
+html,
+body {
+  font-family: Vazir !important;
+  /*direction: rtl !important;*/
+}
+
+.store-products{
+    background-color: #f3f3f3 !important;
+}
+
+.store-products > div{
+    background-color: #fff !important;
+    border-radius: 20px !important;
+    padding: 20px 0 !important;
+}
+
+aside {
+  height: 100%;
+}
+
+aside .nav{
+    padding: 0 !important;
+}
+
+aside .nav-item {
+  margin: 7.5px 0 7.5px 0 !important;
+}
+
+aside .nav-link {
+  color: #000 !important;
+  border-radius: 15px !important;
+  transition: 0.2s !important;
+  font-weight: 500;
+}
+
+aside .nav-link:hover {
+  border-radius: 15px !important;
+}
+
+.item-active .nav-link {
+  color: #ffffff !important;
+  background: linear-gradient(45deg, #44edaa, #26c5c1) !important;
+  border-radius: 15px !important;
+}
+
+.item-active:hover .nav-link {
+  background: linear-gradient(45deg, #26c5c1, #44edaa) !important;
+  border: none !important;
+}
+
+aside .nav-link:hover {
+  border: 2px solid #44edaa;
+  background-color: #fff !important;
+  font-weight: bold;
+}
+
+.products{
+    padding-right: 20px !important;
+}
+
+.card{
+	padding: 10px !important;
+	transition: 0.4s;
+	border-color: #e8e8e8;
+	border-radius: 5px;
+	border: 2px solid #e8e8e8;
+}
+
+.card:hover{
+	box-shadow: 6px 6px 18px 9px #e8e8e8;
+}
+
+.card-img{
+  padding: 0 3px;
+  height: 100%;
+  position: relative;
+}
+
+.card-img > .img-content {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 0;
+	background-color: black;
+	transition: 0.4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff !important;
+	background: linear-gradient(45deg, #44edaa, #26c5c1) !important;
+	overflow: hidden;
+	
+}
+
+.card:hover .img-content{
+	height: 100%;
+}
+
+.card-img img{
+	height: inherit;
+	width: 100%;
+}
+
+.card-body{
+  padding: 0 8px;
+}
+
+.flex-auto{ 
+  flex-basis: 31.33%;
+}
+
+.card{
+  margin-bottom: 15px !important;
+}
+
+.products-grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.padding-card{
+	padding: 0 10px;
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+@media (min-width: 0) { 
+	.products-grid > *{
+		flex-basis: 100%;
+	}
+	
+	.store-products{
+		padding: 0 5px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.products-grid > *{
+		flex-basis: 50%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.store-products{
+		padding: 15px;
+	}
+	
+	aside {
+		border-left: 1px solid #e8e8e8;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.products-grid > *{
+		flex-basis: 33.33%;
+	}
+	
+	.store-products{
+		padding: 10px 30px;
+	}
+	
+	
+}
