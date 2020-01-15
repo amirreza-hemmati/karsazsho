@@ -67,7 +67,7 @@ aside .nav-link:hover {
 }
 
 .card{
-	padding: 10px !important;
+	/*padding: 10px !important;*/
 	transition: 0.4s;
 	border-color: #e8e8e8;
 	border-radius: 5px;
@@ -79,8 +79,9 @@ aside .nav-link:hover {
 }
 
 .card-img{
-  padding: 0 3px;
-  height: 100%;
+  /*padding: 0 3px;*/
+  height: 70px;
+  width: 70px;
   position: relative;
 }
 
@@ -101,13 +102,18 @@ aside .nav-link:hover {
 	
 }
 
+.card-content{
+	padding: 10px 5px 0 5px;
+}
+
 .card:hover .img-content{
 	height: 100%;
 }
 
 .card-img img{
 	height: inherit;
-	width: 100%;
+	width: 70px;
+	height: 70px;
 }
 
 .card-body{
@@ -131,6 +137,11 @@ aside .nav-link:hover {
 	padding: 0 10px;
 	text-decoration: none;
 	color: black;
+	text-decoration: none;
+}
+
+.padding-card:hover{
+	text-decoration: none;
 }
 
 
@@ -147,10 +158,17 @@ aside .nav-link:hover {
 	.store-products{
 		padding: 0 5px;
 	}
+	
+	.card-content{
+		font-size: 22px;
+	}
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+	.card-content{
+		font-size: 20px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -166,6 +184,10 @@ aside .nav-link:hover {
 		.products-grid > *{
 		flex-basis: 50%;
 	}
+	
+		.card-content{
+		font-size: 18px;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -178,5 +200,7 @@ aside .nav-link:hover {
 		padding: 10px 30px;
 	}
 	
-	
+	.card-content{
+		font-size: 16px;
+	}
 }

@@ -25,11 +25,11 @@
 }
 
 .justify-content-start {
-  justify-content: start !important;
+  justify-content: flex-start !important;
 }
 
 .justify-content-end {
-  justify-content: end !important;
+  justify-content: flex-end !important;
 }
 
 /* flex align */
